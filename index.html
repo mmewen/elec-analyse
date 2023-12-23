@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		#data_calendar td {
+			width: 15px;
+			height: 15px;
+			border: 1px solid lightgray;
+		}
+
+		#data_calendar td .data_ok {
+			border-color: black;
+		}
+	</style>
+
+	<script type="text/javascript" src="./main.js"></script>
+</head>
+<body>
+	<h1>Elec-analyse</h1>
+
+	<h2>Historique de conso</h2>
+	<h3>Données stockées</h3>
+	<table id="data_calendar"></table>
+
+	<h3>Télécharger</h3>
+	<form>
+		<input type="text" name="api_key" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOlsiMTQ2MzMxNDAzMjI5NzAiXSwiZXhwIjoxNzk2NjY5NDI1LCJpYXQiOjE3MDIzMjA2MjV9.CvqFVnUJhB9qtNRUHBi6cJZy_MSXkVvQ9cYvgqED-M8">
+		<input type="date" name="start_date">
+		<input type="date" name="end_date">
+		<input type="submit" onclick="return submitForm()">
+	</form>
+
+</body>
+</html>
