@@ -16,7 +16,8 @@
 		}
 	</style>
 
-	<script type="text/javascript" src="./main.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="./main.js"></script>
 </head>
 <body>
 	<h1>Elec-analyse</h1>
@@ -26,11 +27,10 @@
 	<table id="data_calendar"></table>
 
 	<h3>Télécharger</h3>
-	<form>
-		<input type="text" name="api_key" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOlsiMTQ2MzMxNDAzMjI5NzAiXSwiZXhwIjoxNzk2NjY5NDI1LCJpYXQiOjE3MDIzMjA2MjV9.CvqFVnUJhB9qtNRUHBi6cJZy_MSXkVvQ9cYvgqED-M8">
-		<input type="date" name="start_date">
-		<input type="date" name="end_date">
-		<input type="submit" onclick="return submitForm()">
+	<form id="get-data-form">
+		<input type="date" id="start_date">
+		<input type="date" id="end_date">
+		<input type="submit">
 	</form>
 
 </body>

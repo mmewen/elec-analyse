@@ -1,0 +1,11 @@
+{
+  "name": "elec-analyse",
+  "version": "0.0.1",
+  "description": "Retrieve and analyse Linky data",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "socket.io": "^4.7.2"
+  }
+}
